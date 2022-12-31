@@ -3,6 +3,7 @@ using namespace std;
 
     void solve(int k , int n , vector<int>temp , vector<vector<int>> &ans , int sum , int curr)
     {
+        // base case 
     	// if no of digits pick == k and their sum = required sum then !!
         if(temp.size()==k && sum==n)
         {
@@ -15,6 +16,7 @@ using namespace std;
             return;
         }
 
+        // base case
         // if sum exceeds n no meaning of picking new nos
         // or if no of digits picked > k
         // or if no digit left to pick !!
